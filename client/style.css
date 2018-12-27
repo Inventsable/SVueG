@@ -1,0 +1,183 @@
+:root {
+    --borderRadius: 3px;
+    --borderWidth: 1.35px;
+    /* --borderDefault: 1.35px solid var(--color-border); */
+    /* --btnPadding: .0625rem .5rem;
+    --btnMargin: auto .035rem; */
+    --btnHeight: 2.25rem;
+    /* --btnHeightMax: 25.17px; */
+    --btnWidth: 2.75rem;
+}
+
+
+[class*="-btn"] {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--btnHeight);
+    border-width: var(--borderWidth);
+    border-style: solid;
+    border-radius: var(--borderRadius);
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+    /* max-width: 200px; */
+    min-width: var(--btnWidth);
+    /* margin: 1rem 0px; */
+}
+
+.result-toolbar {
+    margin: .25rem 1rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5rem;
+}
+
+[class*="-tertiary-btn"] {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+[class*="-tertiary-btn"]:hover {
+    border-color: var(--color-border);
+    background-color: var(--color-button-hover);
+}
+
+.tab-list {
+    margin: .5rem;
+    display: grid;
+    grid-column-gap: .25rem;
+    cursor: pointer;
+    /* margin-bottom: .5rem; */
+}
+
+[class^="tab-label"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    margin-right: .25rem;
+    width: 0rem;
+    height: 1.8rem;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: calc(var(--borderRadius)/2);
+}
+
+input, textarea {
+    font-family: 'Source Code Pro', monospace;
+    white-space: nowrap;
+}
+
+.wrap-input {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    height: 3rem;
+}
+
+[class^="tab-selector"] {
+    box-sizing: border-box;
+    border-width: 1.5px;
+    width: 100%;
+    height: 0px;
+    border-style: solid;
+}
+
+.node-ui-wrap {
+    font-family: 'Raleway';
+    /* margin: 1rem 20vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    background-color: var(--color-scrollbar-thumb);
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.node-ui-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 20rem;
+    margin: 1rem 2rem;
+}
+
+.node-solo {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0px .25rem;
+    border-radius: 2rem;
+}
+
+.node-add {
+    box-sizing: border-box;
+    border: 1.35px solid var(--color-icon);
+    /* background-color: seagreen; */
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0px .25rem;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+}
+
+.node-wrap {
+    /* box-sizing: border-box; */
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.node-code {
+    font-size: 1.75rem;
+    cursor: default;
+    user-select: none;
+    white-space: nowrap;
+    /* font-weight: 400; */
+}
+
+.testGrid {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.include-menu {
+    width: 2rem;
+    height: 2.35rem;
+    margin-left: .375rem;
+    /* border: 2px solid red; */
+    background-color: var(--color-input-idle);
+    border-radius: var(--borderRadius);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.include-options {
+    /* border: 2px solid green; */
+    position: absolute;
+    /* top: 3rem; */
+    right: 2.5rem;
+    display: block;
+    width: 7rem;
+    height: 2rem;
+    display: none;
+}

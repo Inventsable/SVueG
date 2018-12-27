@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="inventsable.svueg.panel">
+        <HostList>
+            <Host Name="ILST" Port="2118"/>
+            <Host Name="PHXS" Port="2119"/>
+            <Host Name="AEFT" Port="2120"/>
+        </HostList>
+    </Extension>
+</ExtensionList>
